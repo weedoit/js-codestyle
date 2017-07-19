@@ -37,9 +37,9 @@ var a = 1,
 //Not good
 
 var a = [
-	item1,
-	item2,
-	item3
+    item1,
+    item2,
+    item3
 ];
 
 // Good
@@ -58,12 +58,12 @@ var a = [item1, item2, item3];
 //Not good
 
 MinhaClass.metodo1().outroMetodoAi().metodoComArgumentos(1,2,3).metodoComCallCallback(function () {
-	// ...
+    // ...
 });
 
 MinhaClass.metodo1().outroMetodoAi()
 .metodoComArgumentos(1,2,3).metodoComCallCallback(function () {
-	// ...
+    // ...
 });
 
 
@@ -82,9 +82,9 @@ MinhaClass.metodo1()
 
 // No good
 fazAMagica(arg1, function (data) {
-	// ..
+    // ..
 }, function (err) {
-	// ..
+    // ..
 });
 
 // Good
@@ -122,22 +122,22 @@ var a = 1;
 
 // Not good
 function minhaFuncaoSupimposa(arg1,arg2){
-	// ..
+    // ..
 }
 // Good
 function minhaFuncaoSupimposa (arg1, arg2) {
-	// ..
+    // ..
 }
 
 /* Declaração de loops */
 
 // Not good
 for(x=0;x<len;x+=1){
-	// ..
+    // ..
 }
 // Good
 for (x = 0; x < len; x += 1) {
-	// ..
+    // ..
 }
 
 
@@ -184,12 +184,12 @@ var b=2;
 
 // Good
 var a = 1,
-	b = 2;
+    b = 2;
     
 
 // Not good
 var listaDeItens,
-	meuArrayLindao = [1, 2],
+    meuArrayLindao = [1, 2],
     outraCoisa,
     minhaVariavelComValor = "valor";
     
@@ -203,7 +203,7 @@ var meuArrayLindao = [1, 2],
     
 // Mais Good Ainda
 var minhaVariavelComValor = "valor",
-	meuArrayLindao = [1, 2],
+    meuArrayLindao = [1, 2],
     listaDeItens,
     outraCoisa;
 
@@ -211,7 +211,7 @@ var minhaVariavelComValor = "valor",
 // Not good
 function () {
     if (condicao) {
-    	var a = 1;
+        var a = 1;
     }
 }
 
@@ -220,21 +220,21 @@ function () {
     var a;
     
     if (condicao) {
-    	a = 1;
+        a = 1;
     }
 }
 
 // Not good
 for (var x=0, len=list.length; x<len; x++) {
-	// ...
+    // ...
 }
 
 // Good
 var len = list.length,
-	x;
+    x;
     
 for (x = 0; x < len; x++) {
-	// ...
+    // ...
 }
 ```
 
@@ -247,21 +247,21 @@ Abra chaves na mesma linha da declaracao do metodo ou class
 
 class MinhaClasseUltraMegaPower
 {
-	// ...
+    // ...
 }
 
 function funcaozinhaMarota ()
 {
-	// ...
+    // ...
 }
 
 // Good
 class MinhaClasseUltraMegaPower {
-	// ...
+    // ...
 }
 
 function funcaozinhaMarota () {
-	// ...
+    // ...
 }
 
 ```
@@ -273,8 +273,8 @@ Evite quebra de linhas em excesso
 // Not good
 
 function fazAlgoAi (valor) {
-	var a = 1,
-    	b = 0;
+    var a = 1,
+        b = 0;
     
     b = calculaRaizQuadrada(a, valor);
     
@@ -282,7 +282,7 @@ function fazAlgoAi (valor) {
     
     if (valor > 29) {
     
-    	a += 35;
+        a += 35;
         
         a = a * -1 + b;
         
@@ -294,14 +294,14 @@ function fazAlgoAi (valor) {
 
 // Good
 function fazAlgoAi (valor) {
-	var a = 1,
-    	b = 0;
+    var a = 1,
+        b = 0;
     
     b = calculaRaizQuadrada(a, valor);
     b = valor * (a + b);
     
     if (valor > 29) {
-    	a += 35;
+        a += 35;
         a = a * -1 + b;
     }
     
@@ -318,7 +318,7 @@ Deixe uma linha antes e depois de um bloco (if, for, while...) caso nao seja o i
 function fazAlgoAi (valor) {
     var a = 0;
     if (valor > 29) {
-    	a += 35;
+        a += 35;
         a = a * -1 + b;
     }
     return Math.sin(a);
@@ -327,7 +327,7 @@ function fazAlgoAi (valor) {
 function fazAlgoAi (valor) {
 
     if (valor > 29) {
-    	fazAquiloLa();
+        fazAquiloLa();
     }
 
 }
@@ -339,7 +339,7 @@ function fazAlgoAi (valor) {
     var a = 0;
     
     if (valor > 29) {
-    	a += 35;
+        a += 35;
         a = a * -1 + b;
     }
     
@@ -348,7 +348,7 @@ function fazAlgoAi (valor) {
 
 function fazAlgoAi (valor) {
     if (valor > 29) {
-    	fazAquiloLa();
+        fazAquiloLa();
     }
 }
 
@@ -361,7 +361,7 @@ Agrupe o codigo por contexto sempre que possivel.
 // Not good
 
 function fazAlgoAi (user) {
-	var infos = {};
+    var infos = {};
     
     user.name = 'Fred';
     
@@ -374,7 +374,7 @@ function fazAlgoAi (user) {
     infos.mobile = true;
     
     if (user.id) {
-    	user.origin = 'system';
+        user.origin = 'system';
     }
     
     return [user, infos];
@@ -383,7 +383,7 @@ function fazAlgoAi (user) {
 
 // Good
 function fazAlgoAi (user) {
-	var infos = {};
+    var infos = {};
     
     infos.url = 'http://weedo.it';
     infos.mobile = true;
@@ -393,7 +393,7 @@ function fazAlgoAi (user) {
     user.possuiNecessidadesEspeciais = false;
     
     if (user.id) {
-    	user.origin = 'system';
+        user.origin = 'system';
     }
     
     return [user, infos];
@@ -411,7 +411,7 @@ minhaFuncaoMagical(true, "valor2", {valor1: 1, valor: 2, outroValor: "uma string
 
 // Good
 minhaFuncaoMagical(
-	true,
+    true,
     "valor2",
     {
         valor1: 1,
@@ -422,7 +422,7 @@ minhaFuncaoMagical(
 
 // Mais Good ainda
 var options = {
-		valor1: 1,
+        valor1: 1,
         valor: 2,
         outroValor: "uma string qualquer"
     };
@@ -440,18 +440,18 @@ minhaFuncaoMagical(true, "valor2", options);
 ```js
 // Not good
 function cadastraUsuario (nome, genero, ehUsuarioInterno) {
-	// 
+    // 
 }
 cadastraUsuario('Joaquim Frederico', 'm', 1);
 
 // Good
 var MASCULINO = 'm',
-	FEMININO = 'f',
+    FEMININO = 'f',
     USUARIO_INTERNO = 1,
     USUARIO_EXTERNO = 0;
 
 function cadastraUsuario (nome, genero, ehUsuarioInterno) {
-	// 
+    // 
 }
 cadastraUsuario('Joaquim Frederico', MASCULINO, USUARIO_INTERNO);
 
@@ -463,11 +463,11 @@ Usar camelCase em nome de metodos e variavies;
 var nome_do_usuario;
 
 class MinhaClass {
-	set_NomeDoUsuario () {
-    	// ..
+    set_NomeDoUsuario () {
+        // ..
     }
     get_NomeDoUsuario () {
-    	// ..
+        // ..
     }
 }
 
@@ -475,11 +475,11 @@ class MinhaClass {
 var nomeDoUsuario;
 
 class MinhaClass {
-	setNomeDoUsuario () {
-    	// ..
+    setNomeDoUsuario () {
+        // ..
     }
     getNomeDoUsuario () {
-    	// ..
+        // ..
     }
 }
 
@@ -490,12 +490,12 @@ Deixe claro na assinatura do metodo o que ele faz. Não importa se ficar muito l
 ```js
 // Not good
 function enviar (cliente, mensagem) {
-	//..
+    //..
 };
 
 // Good
 function enviarMensagemParaCliente (cliente, mensagem) {
-	//..
+    //..
 };
 
 ```
@@ -506,7 +506,7 @@ Evite abreviacoes ou nomes sem semantica.
 ```js
 // Not good
 var lst = [1, 2, 3],
-	a = new User();
+    a = new User();
     
 a.nome = 'fred';
 a.salva();
@@ -514,7 +514,7 @@ a.salva();
 
 // Good
 var listaDeIds = [1, 2, 3],
-	user = new User();
+    user = new User();
     
 user.nome = 'fred';
 user.salva();
