@@ -166,7 +166,7 @@ var a = {a:1,b:2:c:"string"};
 var a = {a:1, b:2: c:"string"};
 
 // Good
-var a = {a: 1, b:2: c: "string"};
+var a = {a: 1, b: 2, c: "string"};
 
 ```
 
